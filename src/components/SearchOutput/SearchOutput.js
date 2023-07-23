@@ -21,9 +21,15 @@ const SearchOutput = (props) => {
                 return (
                     <SearchResult
                         key={index}
+                        adult={result.adult}
+                        originalLanguage={result.originalLanguage}
+                        overview={result.overview}
+                        popularity={result.popularity}
+                        posterPath={result.posterPath}
+                        releaseDate={result.releaseDate}
                         title={result.title}
-                        authors={result.authors}
-                        link={result.link}
+                        voteAverage={result.voteAverage}
+                        voteCount={result.voteCount}
                     />
                 );
             })
